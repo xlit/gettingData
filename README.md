@@ -14,10 +14,11 @@ Here we explain how the R script "run_analysis.R" works.
     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
     which is originally from
+
     http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-    The downloaded zip file is unzipped in to the "./UCI HAR Dataset" directory. Here "./" means the current working directory, i.e., where the "run_analysis.R" is in. 
-
+    The downloaded zip file is unzipped in to the "./UCI HAR Dataset" directory. Here "./" means the current working directory, i.e., where the "run_analysis.R" is. 
+    
 2. Executing the script. The easiest way is in RStudio, use the command:
     
     ```r
@@ -41,7 +42,7 @@ This file is the output of the "run_analysis.R" script. It is the second tidy da
 ```r
 mydata <- read.table("dataset.mean.txt", header = TRUE)
 ```
-It can be opened in MS Excel.
+It can also be opened in MS Excel as a space seperated text file.
 
 ## About "CodeBook.md"
 This is the code book for "dataset.mean.txt", the output of "run_analysis.R". 
